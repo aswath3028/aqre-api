@@ -1,0 +1,76 @@
+{
+  "name": "app",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:3000",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "@fortawesome/free-brands-svg-icons": "^6.2.0",
+    "@fortawesome/free-regular-svg-icons": "^6.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.2.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "axios": "^0.27.2",
+    "bootstrap": "^5.2.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "env": "^0.0.2",
+    "eslint-config-react-app": "^7.0.1",
+    "express": "^4.18.1",
+    "jquery": "^3.6.1",
+    "jsonwebtoken": "^8.5.1",
+    "jwtoken": "^0.0.0",
+    "mongoose": "^6.4.5",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^2.0.20",
+    "react": "^18.1.0",
+    "react-bootstrap": "^2.5.0",
+    "react-dom": "^18.1.0",
+    "react-icons": "^4.3.1",
+    "react-router-dom": "^6.4.1",
+    "react-scripts": "^5.0.1",
+    "react-slideshow-image": "^4.0.5",
+    "react-use-cart": "^1.13.0",
+    "web-vitals": "^3.0.2"
+  },
+  "_cmd-update-all-modules": "npm run update-all-modules",
+  "scripts": {
+    "start": "react-scripts start",
+    "dev": "concurrently --kill-others \"npm run start\" \"npm run server\"",
+    "server": "nodemon backend/index.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "create-global-node-modules-folder": "if not exist \"%appdata%\\npm\\node_modules\" mkdir %appdata%\\npm\\node_modules",
+    "npm-i-g": "npm i npm@latest -g",
+    "npm-check-i-g": "npm i npm-check@latest -g",
+    "npm-check-u-l": "npm-check \"C:\\Program Files\\nodejs\\node_modules\\npm\" ",
+    "npm-check-u-g": "npm-check \"C:\\Program Files\\nodejs\\node_modules\\npm\" -g",
+    "npm-deep-update-l": "npm update --depth 9999 --dev",
+    "npm-deep-update-g": "npm update --depth 9999 --dev -g",
+    "npm-cache-clear": "npm cache clear --force",
+    "update-all-modules": "npm run create-global-node-modules-folder && npm run npm-i-g && npm run npm-check-i-g && npm run npm-check-u-l && npm run npm-check-u-g && npm run npm-deep-update-l && npm run npm-deep-update-g && npm run npm-cache-clear"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "concurrently": "^7.4.0"
+  }
+}
